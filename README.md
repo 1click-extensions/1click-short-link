@@ -1,1 +1,1 @@
-1click-edit-page-content
+1click-short-link

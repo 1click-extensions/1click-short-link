@@ -5,7 +5,7 @@
     "description": "__MSG_ext_desc__",
     "permissions": [
           "activeTab",
-          "https://utils.1ce.org/is-site-down"
+          "https://utils.1ce.org/"
         ],
     "background": {
       "page": "pages/background.html",
