@@ -1,4 +1,5 @@
 {
+  "paste": {"message": "הדבק כתובת או השתמש בנוכחית" },
   "submit": {"message": "לקצר" },
   "success": {"message": "הקישור הקצר נוצר" },
   "error": {"message": "סליחה, משהו לא עובד" },
