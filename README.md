@@ -1,1 +1,1 @@
-1click-short-link
+1Click-short-link
