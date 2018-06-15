@@ -9,10 +9,13 @@ title.innerText = chrome.i18n.getMessage("paste");
 chrome.tabs.query(query, (tabs)=>{
     if(tabs && tabs[0]){
         urlInput.value = tabs[0].url;
+        checkIt();
     }
 });
 
-sub.addEventListener('click', ()=>{
+sub.addEventListener('click', checkIt);
+
+function checkIt(){
     message.innerText = chrome.i18n.getMessage("please_wait");
     chrome.runtime.sendMessage({action: "shortUrl",url:urlInput.value},(ans) =>{
         //console.log(ans);
@@ -25,4 +28,4 @@ sub.addEventListener('click', ()=>{
             message.innerText = chrome.i18n.getMessage("error");
         }
     });
-})
+}
