@@ -23,6 +23,7 @@ function checkIt(){
             message.innerText = chrome.i18n.getMessage("success");
             shortUrlInput.value  = ans.newUrl;
             shortUrlInput.classList.remove('hidden');
+            chrome.runtime.sendMessage({action: "injectJs"});
         }
         else{
             message.innerText = chrome.i18n.getMessage("error");
