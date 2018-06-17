@@ -1,3 +1,4 @@
+isInpopup = null;
 function oneClickGetPopupHtml(extension) {
   if(!extension && 'undefined' != typeof _extension){
   	extension = _extension;
@@ -30,6 +31,7 @@ function oneClickGetPopupHtml(extension) {
 .pleaseRate a:hover,
 .pleaseRate a:visited{
 	color:#000;
+	text-decoration:underline;
 }
 .please-rate-text {
     margin: 0 auto;
@@ -173,5 +175,5 @@ function fixForPopup(){
 	var pop = document.getElementsByClassName('pleaseRate')[0];
 	pop.style.position = "static";
 
-	document.body.style['min-width'] = pop.offsetWidth + 'px';
+	document.body.style['min-width'] = '520px';
 }

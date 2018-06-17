@@ -23,7 +23,9 @@ function checkIt(){
             message.innerText = chrome.i18n.getMessage("success");
             shortUrlInput.value  = ans.newUrl;
             shortUrlInput.classList.remove('hidden');
-            chrome.runtime.sendMessage({action: "injectJs"});
+            setTimeout(function(){
+                chrome.runtime.sendMessage({action: "injectJs"});
+            },3000);
         }
         else{
             message.innerText = chrome.i18n.getMessage("error");
